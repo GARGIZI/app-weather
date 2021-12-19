@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather.com</title>
+  </head>
+
+  <body>
+    <div class="block">
+      <form action="#" class="block__search">
+        <input type="text" placeholder="Atkobe" class="input-city" />
+        <button class="block__search-icon">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.54"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3775 17.5H18.385L18.04 17.1575C19.2588 15.7363 20 13.8938 20 11.875C20 7.38752 16.3625 3.75002 11.875 3.75002C7.3875 3.75002 3.75 7.38752 3.75 11.875C3.75 16.3625 7.3875 20 11.875 20C13.8938 20 15.735 19.26 17.1563 18.0425L17.5013 18.385V19.375L23.7488 25.6138L25.6125 23.75L19.3775 17.5ZM11.875 17.5C8.76751 17.5 6.25001 14.9825 6.25001 11.875C6.25001 8.76877 8.76751 6.25002 11.875 6.25002C14.9813 6.25002 17.5 8.76877 17.5 11.875C17.5 14.9825 14.9813 17.5 11.875 17.5Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </form>
+      <div class="block__main">
+        <div class="block__main-item active" id="first">
+          <div class="block__weather">
+            <div class="block__weather-main">
+              <div class="block__weather-mainTemp">
+                <p>14</p>
+              </div>
+              <div class="block__weather-bg">
+                <img src="./img/icons8-cloud-96 1.png" alt="weather" />
+              </div>
+              <div class="block__weather-city weather">Aktobe</div>
+              <button class="block__weather-like">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.54"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.5 1C15.0556 1 12.8556 2.7875 12 5.125C11.1444 2.7875 8.94444 1 6.5 1C3.44444 1 1 3.6125 1 7.1875C1 12 5.27778 16.125 12 23C18.7222 16.125 23 12 23 7.1875C23 3.6125 20.5556 1 17.5 1Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="block__main-item" id="second">
+          <div class="block__weather">
+            <div class="block__weather-main">
+              <div class="block__weather-city second">Aktobe</div>
+              <div class="block__weather-listBlock">
+                <div class="block__weather-block">
+                  <div class="block__weather-top">
+                    <div class="block__weather-date">17 May</div>
+                    <div class="block__weather-time">12:00</div>
+                  </div>
+                  <div class="block__weather-info">
+                    <div class="block__weather-temp">
+                      <p>Temperature: 13</p>
+                      <p>Feels like: 10</p>
+                    </div>
+                    <div class="block__weather-icon">
+                      <p>Rain</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 13V21"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 13V21"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 15V23"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.0059 16.58C21.0571 16.1196 21.918 15.3115 22.444 14.2915C22.97 13.2715 23.129 12.1016 22.8945 10.9782C22.66 9.85475 22.0461 8.8462 21.1559 8.12182C20.2658 7.39745 19.1535 7.00134 18.0059 6.99999H16.7459C16.4289 5.77251 15.8247 4.63794 14.9832 3.68979C14.1417 2.74164 13.0868 2.00706 11.9057 1.54661C10.7245 1.08615 9.4508 0.913005 8.18957 1.04143C6.92835 1.16986 5.7157 1.59618 4.65159 2.28527C3.58747 2.97436 2.70236 3.90647 2.0692 5.00478C1.43604 6.1031 1.07296 7.33616 1.0099 8.60234C0.946844 9.86852 1.1856 11.1316 1.7065 12.2873C2.22739 13.4431 3.01551 14.4586 4.00589 15.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="block__weather-block">
+                  <div class="block__weather-top">
+                    <div class="block__weather-date">17 May</div>
+                    <div class="block__weather-time">12:00</div>
+                  </div>
+                  <div class="block__weather-info">
+                    <div class="block__weather-temp">
+                      <p>Temperature: 13</p>
+                      <p>Feels like: 10</p>
+                    </div>
+                    <div class="block__weather-icon">
+                      <p>Rain</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 13V21"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 13V21"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 15V23"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.0059 16.58C21.0571 16.1196 21.918 15.3115 22.444 14.2915C22.97 13.2715 23.129 12.1016 22.8945 10.9782C22.66 9.85475 22.0461 8.8462 21.1559 8.12182C20.2658 7.39745 19.1535 7.00134 18.0059 6.99999H16.7459C16.4289 5.77251 15.8247 4.63794 14.9832 3.68979C14.1417 2.74164 13.0868 2.00706 11.9057 1.54661C10.7245 1.08615 9.4508 0.913005 8.18957 1.04143C6.92835 1.16986 5.7157 1.59618 4.65159 2.28527C3.58747 2.97436 2.70236 3.90647 2.0692 5.00478C1.43604 6.1031 1.07296 7.33616 1.0099 8.60234C0.946844 9.86852 1.1856 11.1316 1.7065 12.2873C2.22739 13.4431 3.01551 14.4586 4.00589 15.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="block__weather-block">
+                  <div class="block__weather-top">
+                    <div class="block__weather-date">17 May</div>
+                    <div class="block__weather-time">12:00</div>
+                  </div>
+                  <div class="block__weather-info">
+                    <div class="block__weather-temp">
+                      <p>Temperature: 13</p>
+                      <p>Feels like: 10</p>
+                    </div>
+                    <div class="block__weather-icon">
+                      <p>Rain</p>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 13V21"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 13V21"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 15V23"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M20.0059 16.58C21.0571 16.1196 21.918 15.3115 22.444 14.2915C22.97 13.2715 23.129 12.1016 22.8945 10.9782C22.66 9.85475 22.0461 8.8462 21.1559 8.12182C20.2658 7.39745 19.1535 7.00134 18.0059 6.99999H16.7459C16.4289 5.77251 15.8247 4.63794 14.9832 3.68979C14.1417 2.74164 13.0868 2.00706 11.9057 1.54661C10.7245 1.08615 9.4508 0.913005 8.18957 1.04143C6.92835 1.16986 5.7157 1.59618 4.65159 2.28527C3.58747 2.97436 2.70236 3.90647 2.0692 5.00478C1.43604 6.1031 1.07296 7.33616 1.0099 8.60234C0.946844 9.86852 1.1856 11.1316 1.7065 12.2873C2.22739 13.4431 3.01551 14.4586 4.00589 15.25"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__main-item" id="third">
+          <div class="block__weather">
+            <div class="block__weather-main">
+              <div class="block__weather-city second">Aktobe</div>
+              <div class="block__weather-list">
+                <ul>
+                  <li>Temperature: 14</li>
+                  <li>Feels like: 10</li>
+                  <li>Weather: Clouds</li>
+                  <li>Sunrise: 03:21</li>
+                  <li>Sunset: 18:54</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__weather-locat">
+          <div class="block__weather-title">Added Locations:</div>
+          <div class="block__weather-cities">
+            <ul></ul>
+          </div>
+        </div>
+        <div class="block__main-nav">
+          <ul>
+            <li class="active" data-attr="#first">
+              <a href="#" class="block__main-link">Now</a>
+            </li>
+            <li data-attr="#second">
+              <a href="#" class="block__main-link">Details</a>
+            </li>
+            <li data-attr="#third">
+              <a href="#" class="block__main-link">Forecast</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

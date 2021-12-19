@@ -15,7 +15,7 @@ UI.INPUT.addEventListener("keydown", function (event) {
         UI.TITLE_CITY.textContent = data.name;
         UI.TEMPERATURE.textContent = Math.round(data.main.temp);
 
-        UI.IMAGE_WEATHER.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        UI.IMAGE_WEATHER.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
         UI.LIKE.addEventListener("click", addFavorite);
 
